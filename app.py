@@ -35,6 +35,15 @@ def appointment():
 def terms():
     return render_template('call-to-action.html')
 
+@app.route('/services')
+def services():
+    return render_template('services.html')
+
+@app.route('/privacy')
+def privacy():
+    return render_template('privacy.html')
+
+
 
 if __name__ == '__main__':
     app.run()
